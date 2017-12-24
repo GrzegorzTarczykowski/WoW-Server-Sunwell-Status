@@ -64,9 +64,9 @@
             this.labelAllianceOnline.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelAllianceOnline.Location = new System.Drawing.Point(30, 115);
             this.labelAllianceOnline.Name = "labelAllianceOnline";
-            this.labelAllianceOnline.Size = new System.Drawing.Size(40, 16);
+            this.labelAllianceOnline.Size = new System.Drawing.Size(15, 16);
             this.labelAllianceOnline.TabIndex = 2;
-            this.labelAllianceOnline.Text = "label1";
+            this.labelAllianceOnline.Text = "0";
             // 
             // labelHordeOnline
             // 
@@ -74,9 +74,9 @@
             this.labelHordeOnline.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHordeOnline.Location = new System.Drawing.Point(161, 115);
             this.labelHordeOnline.Name = "labelHordeOnline";
-            this.labelHordeOnline.Size = new System.Drawing.Size(40, 16);
+            this.labelHordeOnline.Size = new System.Drawing.Size(15, 16);
             this.labelHordeOnline.TabIndex = 3;
-            this.labelHordeOnline.Text = "label1";
+            this.labelHordeOnline.Text = "0";
             // 
             // labelAllianceOnlinePercent
             // 
@@ -84,9 +84,9 @@
             this.labelAllianceOnlinePercent.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelAllianceOnlinePercent.Location = new System.Drawing.Point(9, 135);
             this.labelAllianceOnlinePercent.Name = "labelAllianceOnlinePercent";
-            this.labelAllianceOnlinePercent.Size = new System.Drawing.Size(40, 16);
+            this.labelAllianceOnlinePercent.Size = new System.Drawing.Size(15, 16);
             this.labelAllianceOnlinePercent.TabIndex = 4;
-            this.labelAllianceOnlinePercent.Text = "label1";
+            this.labelAllianceOnlinePercent.Text = "0";
             // 
             // labelAlliancePercent
             // 
@@ -104,9 +104,9 @@
             this.labelHordeOnlinePercent.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelHordeOnlinePercent.Location = new System.Drawing.Point(132, 135);
             this.labelHordeOnlinePercent.Name = "labelHordeOnlinePercent";
-            this.labelHordeOnlinePercent.Size = new System.Drawing.Size(40, 16);
+            this.labelHordeOnlinePercent.Size = new System.Drawing.Size(15, 16);
             this.labelHordeOnlinePercent.TabIndex = 6;
-            this.labelHordeOnlinePercent.Text = "label1";
+            this.labelHordeOnlinePercent.Text = "0";
             // 
             // labelHordePercent
             // 
