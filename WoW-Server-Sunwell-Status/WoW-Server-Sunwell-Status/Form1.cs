@@ -16,12 +16,15 @@ namespace WoW_Server_Sunwell_Status
     {
         WebClient webClient;
         string stringWeb;
+        WebClient webClientWintergrasp;
+        string stringWebWintergrasp;
         public Form1()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.MaximizeBox = false;
             webClient = new WebClient();
+            webClientWintergrasp = new WebClient();
             timerGeneral.Enabled = true;
         }
 
@@ -53,7 +56,15 @@ namespace WoW_Server_Sunwell_Status
                     labelHordeOnlinePercent.Text = listOfOnlinePlayersPercent[1];
                 }));
             }).Start();
-
+            new Thread(() =>
+            {
+                stringWebWintergrasp = webClientWintergrasp.DownloadString("https://sunwell.pl/");
+                WintergraspHandling WGH = new WintergraspHandling(stringWebWintergrasp);
+                Invoke(new Action(() =>
+                {
+                    labelWintergrasp.Text = WGH.wintergrasptime;
+                }));
+            }).Start();
         }
 
         private void timerGeneral_Tick(object sender, EventArgs e)

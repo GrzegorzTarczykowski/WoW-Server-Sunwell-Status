@@ -38,6 +38,8 @@
             this.labelHordeOnlinePercent = new System.Windows.Forms.Label();
             this.labelHordePercent = new System.Windows.Forms.Label();
             this.timerGeneral = new System.Windows.Forms.Timer(this.components);
+            this.labelWintergrasp = new System.Windows.Forms.Label();
+            this.labelWintergraspText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlliance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHorde)).BeginInit();
             this.SuspendLayout();
@@ -123,11 +125,33 @@
             this.timerGeneral.Interval = 60000;
             this.timerGeneral.Tick += new System.EventHandler(this.timerGeneral_Tick);
             // 
+            // labelWintergrasp
+            // 
+            this.labelWintergrasp.AutoSize = true;
+            this.labelWintergrasp.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelWintergrasp.Location = new System.Drawing.Point(75, 196);
+            this.labelWintergrasp.Name = "labelWintergrasp";
+            this.labelWintergrasp.Size = new System.Drawing.Size(60, 16);
+            this.labelWintergrasp.TabIndex = 8;
+            this.labelWintergrasp.Text = "00:00:00";
+            // 
+            // labelWintergraspText
+            // 
+            this.labelWintergraspText.AutoSize = true;
+            this.labelWintergraspText.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWintergraspText.Location = new System.Drawing.Point(75, 171);
+            this.labelWintergraspText.Name = "labelWintergraspText";
+            this.labelWintergraspText.Size = new System.Drawing.Size(72, 16);
+            this.labelWintergraspText.TabIndex = 9;
+            this.labelWintergraspText.Text = "Wintergrasp";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(227, 230);
+            this.Controls.Add(this.labelWintergraspText);
+            this.Controls.Add(this.labelWintergrasp);
             this.Controls.Add(this.labelHordePercent);
             this.Controls.Add(this.labelHordeOnlinePercent);
             this.Controls.Add(this.labelAlliancePercent);
@@ -158,6 +182,8 @@
         private System.Windows.Forms.Label labelHordeOnlinePercent;
         private System.Windows.Forms.Label labelHordePercent;
         private System.Windows.Forms.Timer timerGeneral;
+        private System.Windows.Forms.Label labelWintergrasp;
+        private System.Windows.Forms.Label labelWintergraspText;
     }
 }
 
