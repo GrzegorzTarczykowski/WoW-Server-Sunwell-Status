@@ -14,25 +14,22 @@ namespace WoW_Server_Sunwell_Status
     class FactionPictureHandling
     {
         WebClient webCLientToLoadPicture;
-        PictureBox currentPictureBoxToLoad;
-        string currentAddressToUri;
-        public FactionPictureHandling(string addresToUri, PictureBox pictureBoxToLoadPicture)
+        public FactionPictureHandling()
         {
             webCLientToLoadPicture = new WebClient();
-            currentAddressToUri = addresToUri;
-            currentPictureBoxToLoad = pictureBoxToLoadPicture;
         }
 
-        public void loadPicture()
+        public void loadPicture(string addresToUri, PictureBox pictureBoxToLoadPicture)
         {
-            webCLientToLoadPicture.DownloadDataAsync(new Uri(currentAddressToUri));
+            webCLientToLoadPicture.DownloadDataAsync(new Uri(addresToUri), pictureBoxToLoadPicture);
             webCLientToLoadPicture.DownloadDataCompleted += callBackLoadPicture;
         }
 
         private void callBackLoadPicture(object sender, DownloadDataCompletedEventArgs e)
         {
             var ms = new MemoryStream(e.Result);
-            currentPictureBoxToLoad.Image = Image.FromStream(ms);
+            PictureBox currentPictureBox = e.UserState as PictureBox;
+            currentPictureBox.Image = Image.FromStream(ms);
         }
     }
 }

@@ -29,13 +29,13 @@ namespace WoW_Server_Sunwell_Status
         {
             new Thread(() =>
             {
-                FactionPictureHandling FPHAlliance = new FactionPictureHandling("https://sunwell.pl/application/images/misc/alliance2.png", pictureBoxAlliance);
-                FPHAlliance.loadPicture();
+                FactionPictureHandling FPHAlliance = new FactionPictureHandling();
+                FPHAlliance.loadPicture("https://sunwell.pl/application/images/misc/alliance2.png", pictureBoxAlliance);
             }).Start();
             new Thread(() =>
             {
-                FactionPictureHandling FPHHorde = new FactionPictureHandling("https://sunwell.pl/application/images/misc/horde2.png", pictureBoxHorde);
-                FPHHorde.loadPicture();
+                FactionPictureHandling FPHHorde = new FactionPictureHandling();
+                FPHHorde.loadPicture("https://sunwell.pl/application/images/misc/horde2.png", pictureBoxHorde);
             }).Start();
             new Thread(() =>
             {
